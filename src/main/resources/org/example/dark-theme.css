@@ -1,0 +1,34 @@
+/* Base styles for the dark theme */
+.root {
+    -fx-base: #3a3a3a; /* A dark grey base color */
+    -fx-background: #2b2b2b;
+    -fx-control-inner-background: #424242;
+    -fx-text-base-color: #e0e0e0; /* Light text */
+}
+
+/* Style for the table and list views */
+.table-view, .list-view {
+    -fx-background-color: #424242;
+}
+
+/* Style for all cells */
+.table-cell, .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e0e0e0; /* Light grey text */
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0; /* A subtle line below each cell */
+}
+
+/* Style for selected items */
+.list-view:focused .list-cell:selected,
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: #005A9E; /* A nice blue for selection */
+    -fx-text-fill: white;
+}
+
+/* Ensure text in other components is visible */
+.button, .toggle-button, .text-field {
+    -fx-text-fill: white;
+}

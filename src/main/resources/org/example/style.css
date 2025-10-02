@@ -1,0 +1,25 @@
+/* General styling for the entire application window */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif; /* A cleaner font */
+    -fx-base: #F5F5F5; /* A slightly off-white background */
+}
+
+/* Style for the table view */
+.table-view .column-header {
+    -fx-font-size: 14px;
+    -fx-background-color: #E0E0E0;
+}
+
+/* Style for cells in the table and list */
+.table-cell, .list-cell {
+    -fx-padding: 8px; /* Add more breathing room */
+    -fx-font-size: 13px;
+    -fx-border-color: transparent;
+}
+
+/* Style for the selected item in the list or table */
+.list-view:focused .list-cell:selected,
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: #0078D7; /* A modern blue for selection */
+    -fx-text-fill: white;
+}
